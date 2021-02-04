@@ -3,6 +3,8 @@ import Wave from './Wave';
 
 import { S_CONTAINER, S_DESCRIPTION, S_HIDE, S_IMAGE } from '../styles';
 
+import { Link } from 'react-router-dom';
+
 //Framer Motion
 import { motion } from 'framer-motion';
 import { titleAnimation, fade, photoAnimation } from '../animation';
@@ -28,7 +30,9 @@ const AboutSection = () => {
 					Contact us for any photography or videography ideas that you have. We
 					have professionals with amazing skills.
 				</motion.p>
-				<motion.button variants={fade}>Contact Us</motion.button>
+				<Link to="/contact">
+					<motion.button variants={fade}>Contact Us</motion.button>
+				</Link>
 			</S_DESCRIPTION>
 			<S_IMAGE>
 				<motion.img

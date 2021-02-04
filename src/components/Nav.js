@@ -9,7 +9,7 @@ const Nav = () => {
 	return (
 		<S_NAV>
 			<h1 id="logo">
-				<Link to="/">Capture</Link>
+				<Link to="/aboutus">Capture</Link>
 			</h1>
 			<ul>
 				<li>
