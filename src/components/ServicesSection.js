@@ -34,28 +34,28 @@ const ServicesSection = () => {
 							<img src={clock} alt="icon" />
 							<h3>Efficient</h3>
 						</div>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p className="text">Lorem ipsum dolor sit amet.</p>
 					</S_CARD>
 					<S_CARD>
 						<div className="icon">
 							<img src={teamwork} alt="icon" />
 							<h3>Teamwork</h3>
 						</div>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p className="text">Lorem ipsum dolor sit amet.</p>
 					</S_CARD>
 					<S_CARD>
 						<div className="icon">
 							<img src={diaphragm} alt="icon" />
 							<h3>Pro Grade Gear</h3>
 						</div>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p className="text">Lorem ipsum dolor sit amet.</p>
 					</S_CARD>
 					<S_CARD>
 						<div className="icon">
 							<img src={money} alt="icon" />
 							<h3>Affordable</h3>
 						</div>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p className="text">Lorem ipsum dolor sit amet.</p>
 					</S_CARD>
 				</S_CARDS>
 			</S_DESCRIPTION>
@@ -79,6 +79,9 @@ const S_SERVICES = styled(S_CONTAINER)`
 const S_CARDS = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	@media (max-width: 1300px) {
+		justify-content: center;
+	}
 `;
 
 const S_CARD = styled.div`
@@ -94,6 +97,8 @@ const S_CARD = styled.div`
 			padding: 1rem;
 		}
 	}
+
+	justify-content: center;
 `;
 
 export default ServicesSection;

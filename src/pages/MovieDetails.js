@@ -57,6 +57,7 @@ const S_HEADLINE = styled.div`
 	position: relative;
 	h2 {
 		position: absolute;
+		text-align: center;
 		top: 10%;
 		left: 50%;
 		transform: translate(-50%, -10%);
@@ -75,6 +76,10 @@ const S_AWARDS = styled.div`
 	margin: 5rem 10rem;
 	align-items: center;
 	justify-content: space-around;
+	@media (max-width: 1300px) {
+		display: block;
+		margin: 2rem 2rem;
+	}
 `;
 
 const S_AWARD = styled.div`

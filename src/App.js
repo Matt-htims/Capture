@@ -10,6 +10,7 @@ import Nav from './components/Nav';
 import OurWork from './pages/OurWork';
 import ContactUs from './pages/ContactUs';
 import MovieDetails from './pages/MovieDetails';
+import ScrollTop from './components/ScrollTop';
 
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom';
@@ -22,10 +23,11 @@ function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
+			<ScrollTop />
 			<Nav />
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route path="/" component={AboutUs} exact />
+					<Route path="/aboutus" component={AboutUs} exact />
 
 					<Route path="/work" component={OurWork} exact />
 
